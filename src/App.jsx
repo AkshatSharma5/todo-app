@@ -4,11 +4,9 @@ import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
 import Sidebar from "./components/Sidebar/Sidebar";
 
-import { NextUIProvider } from "@nextui-org/react";
 
 function App() {
   return (
-    <NextUIProvider>
       <Router>
         <div className="flex">
           <Sidebar />
@@ -20,7 +18,6 @@ function App() {
           </div>
         </div>
       </Router>
-    </NextUIProvider>
   );
 }
 export default App;
